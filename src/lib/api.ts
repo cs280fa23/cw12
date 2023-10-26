@@ -3,8 +3,8 @@ import type { User, Post } from "@/lib/data";
 
 // Mock database
 const db = {
-  users,
-  posts,
+  users: [...users],
+  posts: [...posts],
 };
 
 export type PostWithUserData = Post & { user?: User };
